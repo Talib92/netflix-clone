@@ -21,4 +21,8 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ### Tailwind CSS
 
-To include tailwind go to tailwind website and choose create-react-app and do the configurations shown in the website
+To include tailwind go to tailwind website and choose create-react-app and do the configurations shown in the website.
+
+### Firebase
+
+Implemented authentication using firebase, implemented signup, signin and signout features.
