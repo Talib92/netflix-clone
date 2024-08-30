@@ -26,3 +26,7 @@ To include tailwind go to tailwind website and choose create-react-app and do th
 ### Firebase
 
 Implemented authentication using firebase, implemented signup, signin and signout features.
+
+### TMDB
+
+Made use of TMDB api to fetch movies data.
