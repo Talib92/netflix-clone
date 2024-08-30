@@ -6,6 +6,7 @@ import { auth } from '../utils/firebase';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
+import { BG_LOGO } from '../utils/constants';
 
 const Login = () => {
 
@@ -66,7 +67,7 @@ const Login = () => {
             .then((userCredential) => {
             // Signed in 
             const user = userCredential.user;
-            console.log(user)
+            // console.log(user)
             navigate("/browse")
         })
             .catch((error) => {
@@ -89,7 +90,7 @@ const Login = () => {
     <div >
         <Header/>
         <div className='absolute'>
-            <img src="https://analyticsindiamag.com/wp-content/uploads/2019/05/apps.55787.9007199266246365.687a10a8-4c4a-4a47-8ec5-a95f70d8852d.jpg" 
+            <img src={BG_LOGO}
             alt="background" />
         </div>
 
