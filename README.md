@@ -30,3 +30,7 @@ Implemented authentication using firebase, implemented signup, signin and signou
 ### TMDB
 
 Made use of TMDB api to fetch movies data.
+
+### Getting different movies data
+
+Getting data for popular, top rated etc movies.
