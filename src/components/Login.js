@@ -90,18 +90,18 @@ const Login = () => {
     <div >
         <Header/>
         <div className='absolute'>
-            <img src={BG_LOGO}
+            <img className=' w-screen h-screen' src={BG_LOGO}
             alt="background" />
         </div>
 
-        <form onSubmit={(e) => e.preventDefault()} className='absolute w-3/12  mx-auto right-0 left-0 bg-black my-52 p-10 rounded-md opacity-75'>
+        <form onSubmit={(e) => e.preventDefault()} className='absolute w-full max-w-xs sm:max-w-xs md:max-w-xs lg:max-w-xs  mx-auto right-0 left-0 bg-black my-36 p-10 rounded-md opacity-75'>
             <h1 className='text-white font-bold text-2xl px-2 mb-4'>{signInform? "Sign In": "Sign Up"}</h1>
 
-            {!signInform && <input  ref = {name} type="text" placeholder='Username' className='px-2 mx-2 my-2 w-full rounded-sm bg-gray-300 outline-none py-1 ' />}
+            {!signInform && <input  ref = {name} type="text" placeholder='Username' className='px-2 mx-2 my-2 w-full rounded-sm bg-gray-50 outline-none py-1  ' />}
             <input 
-            ref = {email} type="text" placeholder='Email Address' className='px-2 mx-2 my-2 w-full rounded-sm bg-gray-300 outline-none py-1 ' />
+            ref = {email} type="text" placeholder='Email Address' className='px-2 mx-2 my-2 w-full rounded-sm bg-gray-50 outline-none py-1  ' />
             <input
-            ref = {password} type="password" placeholder='Password' className='px-2 mx-2 my-2 w-full rounded-sm bg-gray-300 outline-none py-1 ' />
+            ref = {password} type="password" placeholder='Password' className='px-2 mx-2 my-2 w-full rounded-sm bg-gray-50 outline-none py-1 ' />
 
             <p className='font-bold text-red-700 px-2'>{errorMessage}</p>
 
